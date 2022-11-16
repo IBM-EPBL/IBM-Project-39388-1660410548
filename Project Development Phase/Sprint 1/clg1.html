@@ -1,0 +1,145 @@
+<html>
+<head>
+<center>
+<div class="container a">
+<!--<h1 style="font-size:400%">LEVEL-II LOGIN</h1>-->
+</div>
+</center>
+<style>
+/*.a{
+            height: 100px;
+            width: 60%;
+
+
+               background: -webkit-linear-gradient(left, #99ccff , #e6ccff);
+                
+                margin-top: 3%;
+                padding: 3%;
+                border-radius: 2.5rem;
+
+
+
+}*/
+
+.register{
+height: 430px;
+  width: 30%;
+//background-color: #99ddff;
+}
+body {
+ 
+
+
+ 
+background-size: cover;
+background-position: fit;
+background-repeat: no-repeat;
+height: 100%;
+width: 100%;
+}
+.register{
+                background: -webkit-linear-gradient(left, #99ccff , #e6ccff);
+                
+                margin-top: 3%;
+                padding: 3%;
+                border-radius: 2.5rem;
+            }
+
+         .b {
+                width: 25%;
+                border-radius: 1rem;
+                padding: 1%;
+                color: #fff;
+                background-color: #6666ff;
+               // border: none;
+                cursor: pointer;
+          
+            }
+        .b1 {
+                width: 25%;
+                border-radius: 1rem;
+                padding: 1%;
+                color: #fff;
+                background-color: #6666ff;
+               // border: none;
+                cursor: pointer;
+          
+            }
+</style>
+</head>
+<body>
+<center>
+</br>
+</br>
+
+<div class="container register">
+<h1 style="font-size:300%">LOGIN</h1>
+<fieldset style="width:300px">
+</br>
+</br>
+
+<!--<input type="text" name="na" id="na" placeholder="Enter your name*"></br></br>-->
+<input type="text" name="reg" id="reg" placeholder="Enter the username*"></br></br>
+<input type="password" name="pass" id="pass" placeholder="Enter the password*"></br></br>
+<!--<input type="number" name="yr" id="yr" placeholder="Enter the year*"></br></br>-->
+<input type="submit" name="su" id="su" class="b" onclick="my();">
+<input type="submit" value="Register" name="su1" id="su1" class="b1" onclick="my1();"></br>
+
+</fieldset>
+</div>
+</center>
+</br></br></br></br></br></br></br></br></br></br></br></br></br>
+<script>
+function my()
+{
+//var na=document.getElementById("na").value;
+var reg=document.getElementById("reg").value;
+var pass=document.getElementById("pass").value;
+//var yr=document.getElementById("yr").value;
+//var na=document.getElementById("na").value;
+  
+  
+ 
+   google.script.run.withSuccessHandler(function(output) 
+    { 
+      
+      if((output == "TRUE"))
+      {
+        // alert("Login Successful...");
+
+       window.open("https://www.google.com");
+      } 
+      else
+      {
+        alert("You must register first");
+       
+      }
+          
+       }).checkLogin(reg,pass); 
+
+//document.getElementById("mf1").reset();
+//document.getElementById("na").value="";
+document.getElementById("reg").value="";
+document.getElementById("pass").value="";
+//document.getElementById("yr").value="";
+
+
+}
+function my1()
+{
+
+//var na=document.getElementById("na").value;
+var reg=document.getElementById("reg").value;
+var pass=document.getElementById("pass").value;
+//var yr=document.getElementById("yr").value;
+//var na=document.getElementById("na").value;
+  
+  google.script.run.AddRecord(reg,pass)
+  alert("New account created");
+  document.getElementById("reg").value="";
+  document.getElementById("pass").value="";
+
+}
+</script>
+</body>
+</html>
