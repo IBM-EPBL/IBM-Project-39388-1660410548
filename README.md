@@ -23,4 +23,4 @@ This is why short-term forecasting is so important in the retail and consumer go
 https://youtu.be/kBfyK9SfRW4
   
  **project trail video link** 
- https://youtu.be/pfhekFtDVHQ
+   https://youtu.be/pfhekFtDVHQ
