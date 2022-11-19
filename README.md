@@ -16,3 +16,5 @@ This is why short-term forecasting is so important in the retail and consumer go
 1. Exploratory Data Analysis 
 2. IBM Cloud 
 3. Web design 
+
+**Link to the website:**https://script.google.com/macros/s/AKfycbwnJCIuCqYfXth5sYcD6VRLHdTvOCW7k2RCvsWOoCzaZZvVLC8cnc27pVQl504GxIrBvw/exec
